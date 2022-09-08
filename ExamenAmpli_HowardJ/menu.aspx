@@ -17,9 +17,11 @@
                     <div>
                         <asp:Button class='ghost-round full-width' ID="BMenu2" runat="server" OnClick="BMenu2_Click" Text="DIAS" /></div>
                     <div>
-                        <asp:Button class='ghost-round full-width' ID="BMenu3" runat="server" OnClick="BMenu3_Click" Text="AGREGAR RESTRICCION" /></div>
+                        <asp:Button class='ghost-round full-width' ID="BMenu3" runat="server" OnClick="BMenu3_Click" Text="RESTRICCION" /></div>
                     <div>
                         <asp:Button class='ghost-round full-width' ID="BMenu4" runat="server" OnClick="BMenu4_Click" Text="BITACORA" /></div>
+                    <div>
+                        <asp:Button class='ghost-round full-width' ID="BMenu5" runat="server" OnClick="BMenu5_Click" Text="REPORTE" /></div>
 
                 </div>
             </div>

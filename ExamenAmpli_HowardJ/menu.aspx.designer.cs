@@ -49,5 +49,14 @@ namespace ExamenAmpli_HowardJ
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BMenu4;
+
+        /// <summary>
+        /// BMenu5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BMenu5;
     }
 }

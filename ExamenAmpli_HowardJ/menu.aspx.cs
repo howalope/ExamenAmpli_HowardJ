@@ -33,5 +33,9 @@ namespace ExamenAmpli_HowardJ
         {
             Response.Redirect("bitacora.aspx");
         }
+        protected void BMenu5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reporte.aspx");
+        }
     }
 }
