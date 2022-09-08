@@ -18,8 +18,8 @@ CREATE TABLE DIAS
 	ID_DIA INT IDENTITY,
 	DESCRIPCION VARCHAR (50) NOT NULL, 
 	CONSTRAINT PK_DIA PRIMARY KEY (ID_DIA),
-	CONSTRAINT CK_DIA CHECK (DESCRIPCION IN ('LUNES', 'MIERCOLES','JUEVES','VIERNES','SABADO','DOMINGO') )
-	
+	CONSTRAINT CK_DIA CHECK (DESCRIPCION IN ('LUNES', 'MARTES','MIERCOLES','JUEVES','VIERNES','SABADO','DOMINGO') )
+	 	
 )
 /*----------------------------------------------------------------------------------------------*/
 
@@ -35,19 +35,18 @@ CREATE TABLE RESTRICCION_PLACADIA
 /*----------------------------------------------------------------------------------------------*/
 
 CREATE PROCEDURE AGREGRAR_PLACA
-@ID INT,
+
 @TERMINACION INT
 
 AS 
 	BEGIN
-		INSERT INTO PLACA (ID_PLACA, NUMERO_TERMINACION) VALUES (@ID, @TERMINACION)
+		INSERT INTO PLACA (NUMERO_TERMINACION) VALUES (@TERMINACION)
 
 	END
 /*----------------------------------------------------------------------------------------------*/
 
 CREATE PROCEDURE ELIMINAR_PLACA
-@ID INT,
-@TERMINACION INT
+@ID INT
 
 AS 
 	BEGIN
@@ -57,41 +56,38 @@ AS
 /*----------------------------------------------------------------------------------------------*/
 
 CREATE PROCEDURE AGREGRAR_DIAS
-@IDD INT,
-@DESCRIPCION INT
+
+@DESCRIPCION VARCHAR (50)
 
 AS 
 	BEGIN
-		INSERT INTO DIAS (ID_DIA, DESCRIPCION) VALUES (@IDD, @DESCRIPCION)
+		INSERT INTO DIAS (DESCRIPCION) VALUES (@DESCRIPCION)
 
 	END
 /*----------------------------------------------------------------------------------------------*/
-
 CREATE PROCEDURE ELIMINAR_DIAS
-@IDD INT,
-@DESCRIPCION INT
+@DESCRIPCION VARCHAR (50)
 
 AS 
 	BEGIN
-		DELETE FROM DIAS WHERE ID_DIA = @IDD
+		DELETE FROM DIAS WHERE DESCRIPCION = @DESCRIPCION
 
 	END
 /*----------------------------------------------------------------------------------------------*/
 CREATE PROCEDURE AGREGAR_RESTRICCION
-@IDR INT,
+
 @IDDI INT,
 @IDP INT
 
 AS 
 	BEGIN
-		INSERT INTO RESTRICCION_PLACADIA (ID_CODIGO, ID_PLACA_R, ID_DIA_R) VALUES (@IDR,@IDP,@IDDI)
+		INSERT INTO RESTRICCION_PLACADIA (ID_PLACA_R, ID_DIA_R) VALUES (@IDP,@IDDI)
 	END
 
 /*----------------------------------------------------------------------------------------------*/
+
 CREATE PROCEDURE ELIMINAR_RESTRICCION
-@IDR INT,
-@IDDI INT,
-@IDP INT
+@IDR INT
 
 AS 
 	BEGIN
@@ -127,6 +123,5 @@ AFTER INSERT, DELETE
 
 		END
 /*----------------------------------------------------------------------------------------------*/
-
 
 
