@@ -4,13 +4,15 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Vehiculos</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="masterDesign.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            Examen Extraordinario - Howard Jimenez L.
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

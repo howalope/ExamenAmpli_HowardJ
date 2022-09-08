@@ -11,34 +11,43 @@ namespace ExamenAmpli_HowardJ
 {
 
 
-    public partial class masterPage
+    public partial class placas
     {
 
         /// <summary>
-        /// head control.
+        /// TTerminacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox TTerminacion;
 
         /// <summary>
-        /// form1 control.
+        /// BAgregarP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button BAgregarP;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// TPlaca control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox TPlaca;
+
+        /// <summary>
+        /// BEliminarP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BEliminarP;
     }
 }

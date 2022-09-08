@@ -67,10 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bitacora.aspx" />
+    <Content Include="dias.aspx" />
+    <Content Include="masterDesign.css" />
+    <Content Include="menu.aspx" />
+    <Content Include="notificacionC.aspx" />
+    <Content Include="notificacionE.aspx" />
+    <Content Include="placas.aspx" />
+    <Content Include="restriccion.aspx" />
     <Content Include="VEHICULOS.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bitacora.aspx.cs">
+      <DependentUpon>bitacora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bitacora.aspx.designer.cs">
+      <DependentUpon>bitacora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDias.cs" />
+    <Compile Include="ClsPlaca.cs" />
+    <Compile Include="DBConnections.cs" />
+    <Compile Include="dias.aspx.cs">
+      <DependentUpon>dias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dias.aspx.designer.cs">
+      <DependentUpon>dias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="masterPage.Master.cs">
       <DependentUpon>masterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,7 +103,42 @@
     <Compile Include="masterPage.Master.designer.cs">
       <DependentUpon>masterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notificacionC.aspx.cs">
+      <DependentUpon>notificacionC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notificacionC.aspx.designer.cs">
+      <DependentUpon>notificacionC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notificacionE.aspx.cs">
+      <DependentUpon>notificacionE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notificacionE.aspx.designer.cs">
+      <DependentUpon>notificacionE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="placas.aspx.cs">
+      <DependentUpon>placas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="placas.aspx.designer.cs">
+      <DependentUpon>placas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="restriccion.aspx.cs">
+      <DependentUpon>restriccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="restriccion.aspx.designer.cs">
+      <DependentUpon>restriccion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="masterPage.Master" />

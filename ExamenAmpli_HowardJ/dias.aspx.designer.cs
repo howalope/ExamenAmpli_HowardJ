@@ -11,34 +11,34 @@ namespace ExamenAmpli_HowardJ
 {
 
 
-    public partial class masterPage
+    public partial class dias
     {
 
         /// <summary>
-        /// head control.
+        /// TDia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox TDia;
 
         /// <summary>
-        /// form1 control.
+        /// BAgregarD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button BAgregarD;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// BEliminarD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button BEliminarD;
     }
 }
